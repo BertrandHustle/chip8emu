@@ -8,9 +8,16 @@ void cpu::emulateCycle(short programCounter) {
 }
 
 unsigned short cpu::executeOpcode(unsigned short opcode) {
-	// ANDs so we only have first 4 bits
-	switch(opcode & 0xF000){
-		case 0xA2F0
-	}
+	// ANDs so we only have first 4 bits. e.g. 1010 000000000000
+	switch (opcode & 0xF000) {
+
+		// ANNN: Set indexRegister to address NNN
+		case 0xA2F0{
+			indexRegister = opcode & 0x0FFF; 
+			pc += 2;
+		};
+
+
+	};
 
 }
