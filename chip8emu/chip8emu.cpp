@@ -2,10 +2,14 @@
 //
 
 #include <iostream>
+#include "bintester.h"
 
 int main()
 {
-    std::cout << "Hello World!\n";
+	Bintester b;
+	unsigned short out;
+	out = b.bintest(0xA214, 0xFFF0, '&');
+	std::cout << out;
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
