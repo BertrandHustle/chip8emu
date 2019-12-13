@@ -21,3 +21,4 @@ unsigned short cpu::executeOpcode(unsigned short opcode) {
 	};
 	return 0;
 }
+
